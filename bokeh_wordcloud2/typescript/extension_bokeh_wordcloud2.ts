@@ -33,7 +33,7 @@ export class WordClickEvent extends BokehEvent{
     constructor(readonly word:string,readonly weight:number){
         super()
     }
-    protected _to_json(): JSON {
+    protected _to_json(): JSOND {
         const {word,weight} = this
         return {weight,word}
     }
