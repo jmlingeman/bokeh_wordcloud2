@@ -35,7 +35,7 @@ export class WordClickEvent extends BokehEvent{
     }
     protected _to_json(): JSOND {
         const {word,weight} = this
-        return {...super._to_json(),weight,word}
+        return {weight,word}
     }
 }
 // export type myCB<T> = CallbackLike<T, [string,number,number,number,number], Ret>
