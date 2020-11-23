@@ -33,7 +33,7 @@ export class WordClickEvent extends BokehEvent{
     constructor(readonly word:string,readonly weight:number){
         super()
     }
-    protected _to_json(): JSOND {
+    protected _to_json(): JSON {
         const {word,weight} = this
         return {weight,word}
     }
@@ -274,7 +274,7 @@ export class WordCloud2View extends WidgetView {
                 const data = {word:target[0],weight:target[1],extra:target[2],
                               dimensions:dimensions,event:event,source:source};
                 // trigger event to python
-                this.model.trigger_event(new WordClickEvent(data.word,data.weight))
+                // this.model.trigger_event(new WordClickEvent(data.word,data.weight))
                 // trigger user js click handler
                 if(this.model.click)this.model.click.execute(this.model,data);
             },
