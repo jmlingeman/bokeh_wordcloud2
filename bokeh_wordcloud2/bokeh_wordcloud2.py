@@ -416,7 +416,7 @@ export class WordCloud2 extends Widget {
 
 
 }
-Bokeh.Models.register_models([WordCloud2, WordCloud2View, WordClickEvent]);
+Bokeh.Models.register_models({WordCloud2});
 WordCloud2.initClass()    """
     __implementation__ = JS_CODE
     __javascript__ = [
