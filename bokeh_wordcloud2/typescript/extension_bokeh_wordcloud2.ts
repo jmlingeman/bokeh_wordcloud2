@@ -3,6 +3,7 @@ import {WidgetView} from "models/widgets/widget";
 import {Arrayable} from "core/types";
 import * as p from "core/properties";
 import {CDSView} from "models/sources/cds_view";
+import {BitSet} from "core/util/bitset";
 import {Widget} from "models/widgets";
 import {ColumnDataSource} from "models/sources/column_data_source";
 import {keys} from "core/util/object";
@@ -46,8 +47,12 @@ class DataProvider {
     constructor(readonly source: ColumnDataSource, readonly view: CDSView) {
         if (DTINDEX_NAME in this.source.data)
             throw new Error(`special name ${DTINDEX_NAME} cannot be used as a data table column`)
-
-        this.index = this.view.indices
+        // Convert the bitset into indicies
+        var idx: number[] = []
+        for (const i of this.view.indices) {
+          idx.push(i)
+        }
+        this.index = idx
     }
 
     getLength(): number {
