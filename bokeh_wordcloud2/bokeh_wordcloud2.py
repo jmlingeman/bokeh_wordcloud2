@@ -57,6 +57,7 @@ import {range} from "core/util/array";
 // import {CallbackLike0} from "models/callbacks/callback";
 import {CallbackLike1} from "models/callbacks/callback";
 import {BokehEvent} from "core/bokeh_events";
+import * as Bokeh from "@bokeh/bokehjs";
 import {Class} from "core/class";
 // import {ColumnarDataSource} from "api";
 export type JSOND = {[key: string]: unknown}
@@ -415,9 +416,8 @@ export class WordCloud2 extends Widget {
 
 
 }
-
-WordCloud2.initClass()
-    """
+Bokeh.Models.register_models([WordCloud2, WordCloud2View, WordClickEvent]);
+WordCloud2.initClass()    """
     __implementation__ = JS_CODE
     __javascript__ = [
         "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js",
