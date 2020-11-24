@@ -44,7 +44,7 @@ class WordClick(Event):
 
 
 class _WordCloud2Meta(Widget):
-    __implementation__ = "typescript/extension_bokeh_wordcloud2.ts"
+    __implementation__ = open("typescript/extension_bokeh_wordcloud2.ts").read()
     __javascript__ = [
         "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js",
         "https://cdnjs.cloudflare.com/ajax/libs/wordcloud2.js/1.0.6/wordcloud2.min.js",
