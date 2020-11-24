@@ -3,7 +3,6 @@ import {WidgetView} from "models/widgets/widget";
 import {Arrayable} from "core/types";
 import * as p from "core/properties";
 import {CDSView} from "models/sources/cds_view";
-import {BitSet} from "core/util/bitset";
 import {Widget} from "models/widgets";
 import {ColumnDataSource} from "models/sources/column_data_source";
 import {keys} from "core/util/object";
