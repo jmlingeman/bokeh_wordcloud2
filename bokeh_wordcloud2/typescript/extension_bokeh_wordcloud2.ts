@@ -1,17 +1,17 @@
 // import {DataProvider} from "models/widgets/tables/data_table";
-import {WidgetView} from "@bokehjs/models/widgets/widget";
-import {Arrayable} from "@bokehjs/core/types";
-import * as p from "@bokehjs/core/properties";
-import {CDSView} from "@bokehjs/models/sources/cds_view";
-import {Widget} from "@bokehjs/models/widgets";
-import {ColumnDataSource} from "@bokehjs/models/sources/column_data_source";
-import {keys} from "@bokehjs/core/util/object";
-import {range} from "@bokehjs/core/util/array";
+import {WidgetView} from "@bokeh/bokehjs/models/widgets/widget";
+import {Arrayable} from "@bokeh/bokehjs/core/types";
+import * as p from "@bokeh/bokehjs/core/properties";
+import {CDSView} from "@bokeh/bokehjs/models/sources/cds_view";
+import {Widget} from "@bokeh/bokehjs/models/widgets";
+import {ColumnDataSource} from "@bokeh/bokehjs/models/sources/column_data_source";
+import {keys} from "@bokeh/bokehjs/core/util/object";
+import {range} from "@bokeh/bokehjs/core/util/array";
 // import {CallbackLike0} from "models/callbacks/callback";
-import {CallbackLike1} from "@bokehjs/models/callbacks/callback";
-import {BokehEvent} from "@bokehjs/core/bokeh_events";
+import {CallbackLike1} from "@bokeh/bokehjs/models/callbacks/callback";
+import {BokehEvent} from "@bokeh/bokehjs/core/bokeh_events";
 // import * as Bokeh from "@bokeh/bokehjs";
-import {Class} from "@bokehjs/core/class";
+import {Class} from "@bokeh/bokehjs/core/class";
 // import {ColumnarDataSource} from "api";
 export type JSOND = {[key: string]: unknown}
 export const DTINDEX_NAME = "__bkdt_internal_index__"

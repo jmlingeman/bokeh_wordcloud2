@@ -41,20 +41,20 @@
     }
   })
 ({
-"537821aecb": /* index.js */ function _(require, module, exports) {
+"6a4b8efd20": /* index.js */ function _(require, module, exports) {
     Object.defineProperty(exports, "__esModule", { value: true });
     const tslib_1 = require("tslib");
     const WordCloud2 = tslib_1.__importStar(require("8dc204e7cb") /* ./typescript/ */);
     exports.WordCloud2 = WordCloud2;
-    const base_1 = require("@bokehjs/base");
+    const base_1 = require("@bokeh/bokehjs/base");
     base_1.register_models(WordCloud2);
 },
 "8dc204e7cb": /* typescript/index.js */ function _(require, module, exports) {
     Object.defineProperty(exports, "__esModule", { value: true });
-    var extension_bokeh_wordcloud2_1 = require("2d379139c4") /* ./extension_bokeh_wordcloud2 */;
+    var extension_bokeh_wordcloud2_1 = require("c478435e22") /* ./extension_bokeh_wordcloud2 */;
     exports.WordCloud2 = extension_bokeh_wordcloud2_1.WordCloud2;
 },
-"2d379139c4": /* typescript/extension_bokeh_wordcloud2.js */ function _(require, module, exports) {
+"c478435e22": /* typescript/extension_bokeh_wordcloud2.js */ function _(require, module, exports) {
     Object.defineProperty(exports, "__esModule", { value: true });
     const tslib_1 = require("tslib");
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -68,14 +68,14 @@
         return c > 3 && r && Object.defineProperty(target, key, r), r;
     };
     // import {DataProvider} from "models/widgets/tables/data_table";
-    const widget_1 = require("@bokehjs/models/widgets/widget");
-    const p = tslib_1.__importStar(require("@bokehjs/core/properties"));
-    const cds_view_1 = require("@bokehjs/models/sources/cds_view");
-    const widgets_1 = require("@bokehjs/models/widgets");
-    const column_data_source_1 = require("@bokehjs/models/sources/column_data_source");
-    const object_1 = require("@bokehjs/core/util/object");
-    const array_1 = require("@bokehjs/core/util/array");
-    const bokeh_events_1 = require("@bokehjs/core/bokeh_events");
+    const widget_1 = require("@bokeh/bokehjs/models/widgets/widget");
+    const p = tslib_1.__importStar(require("@bokeh/bokehjs/core/properties"));
+    const cds_view_1 = require("@bokeh/bokehjs/models/sources/cds_view");
+    const widgets_1 = require("@bokeh/bokehjs/models/widgets");
+    const column_data_source_1 = require("@bokeh/bokehjs/models/sources/column_data_source");
+    const object_1 = require("@bokeh/bokehjs/core/util/object");
+    const array_1 = require("@bokeh/bokehjs/core/util/array");
+    const bokeh_events_1 = require("@bokeh/bokehjs/core/bokeh_events");
     exports.DTINDEX_NAME = "__bkdt_internal_index__";
     function event(event_name) {
         return function (cls) {
@@ -358,7 +358,7 @@
     WordCloud2.__name__ = "WordCloud2";
     WordCloud2.initClass();
 },
-}, "537821aecb", {"index":"537821aecb","typescript/index":"8dc204e7cb","typescript/extension_bokeh_wordcloud2":"2d379139c4"}, {});
+}, "6a4b8efd20", {"index":"6a4b8efd20","typescript/index":"8dc204e7cb","typescript/extension_bokeh_wordcloud2":"c478435e22"}, {});
 })
 
 //# sourceMappingURL=bokeh_wordcloud2.js.map

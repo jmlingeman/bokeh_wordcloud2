@@ -1,10 +1,10 @@
-import { WidgetView } from "@bokehjs/models/widgets/widget";
-import * as p from "@bokehjs/core/properties";
-import { CDSView } from "@bokehjs/models/sources/cds_view";
-import { Widget } from "@bokehjs/models/widgets";
-import { ColumnDataSource } from "@bokehjs/models/sources/column_data_source";
-import { CallbackLike1 } from "@bokehjs/models/callbacks/callback";
-import { BokehEvent } from "@bokehjs/core/bokeh_events";
+import { WidgetView } from "@bokeh/bokehjs/models/widgets/widget";
+import * as p from "@bokeh/bokehjs/core/properties";
+import { CDSView } from "@bokeh/bokehjs/models/sources/cds_view";
+import { Widget } from "@bokeh/bokehjs/models/widgets";
+import { ColumnDataSource } from "@bokeh/bokehjs/models/sources/column_data_source";
+import { CallbackLike1 } from "@bokeh/bokehjs/models/callbacks/callback";
+import { BokehEvent } from "@bokeh/bokehjs/core/bokeh_events";
 export declare type JSOND = {
     [key: string]: unknown;
 };
