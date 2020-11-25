@@ -10,7 +10,7 @@ setup(
     version=__VERSION__,
     packages=["bokeh_wordcloud2"],
     package_data={
-        "bokeh_wordcloud2": ["dist/bokeh_wordcloud2.ts"],
+        "bokeh_wordcloud2": ["dist/bokeh_wordcloud2.js"],
     },
     url="https://bokeh-wordcloud2.readthedocs.io",
     long_description=long_description,
